@@ -1,7 +1,7 @@
 $bg-color: #ede34a
 $fg-color: #ffffff
 $txt-color: #000000
-    
+
 *
     box-sizing: border-box
     padding: 0
@@ -35,7 +35,6 @@ form
     flex-direction: column
     justify-content: center
 
-
     label
         padding-bottom: 0.5em
         width: 30%
@@ -50,7 +49,6 @@ form
         width: 100%
         padding: 0.5em
 
-
 fieldset
     font-size: 1em
     border-style: solid
@@ -62,6 +60,7 @@ fieldset
         padding: 0.5em 0.4em
         @media screen and (max-width: 600px)
             flex-flow: wrap
+        
         ul
             list-style-type: none
             display: flex
@@ -69,17 +68,17 @@ fieldset
             align-content: center
             flex-direction: column
             padding: 0
-            li
-                // display: inline-block
-                // padding: 0.2em
-                input
-                    width: 1em
-                    margin-right: 0.5em
+            
+            input
+                width: 1em
+                margin-right: 0.5em
+    
     div:last-child
         padding-bottom: 1em
             
 fieldset:nth-child(2)
     margin-top: 0.5em
+    
 legend
     font-weight: bold
     margin-left: 0.5em
