@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Let us know how we can serve you better</p>
+        </header>
+        <form action="#" method="#" id="survey-form">
+            <fieldset>
+                <legend>Contact Information</legend>
+                
+                <div>
+                <label for="name" id="name-label" class="label-tag">Name:</label>   
+                <input type="text" name="name" id="name" placeholder="Enter your name" class="input-tag"
+                            required>
+                </div>
+
+                <div>
+                <label for="email" id="email-label" class="label-tag">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" class="input-tag" required>
+                </div>
+                
+                <div>
+                <label for="number" id="number-label" class="label-tag">Age:</label>
+                <input type="number" name="age" id="number" min="18" max="54" placeholder="Enter your age"
+                    class="input-tag" required>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Survey Response</legend>
+                <div>
+                    <label for="dropdown" class="label-tag">What do you do currently?</label>
+                    <select name="occupation" id="dropdown" class="input-tag">
+                        <option value="" disabled>Select an option</option>
+                        <option value="Student">Student</option>
+                        <option value="Employed professional">Civil Servant</option>
+                        <option value="Entrepreneur">Entrepreneur</option>
+                        <option value="Unemployed">Unemployed</option>
+                        <option value="PreferNotDisclose">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="level" class="label-tag">What is your current skill level?</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="level" id="beginner" class="input-tag" value="beginner"> Beginner
+                        </li>
+                        <li>
+                            <input type="radio" name="level" id="intermidiate" class="input-tag" value="intermediate"> Intermediate
+                        </li>
+                        <li>
+                            <input type="radio" name="level" id="advanced" class="input-tag" value="advanced"> Advanced
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <label for="interest" class="label-tag">What are you interested in?</label>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="interest" id="pat-draft" class="input-tag" value="pattern drafting">
+                            Pattern drafting
+                        </li>
+                        <li>
+                            <input type="checkbox" name="interest" id="sew-tech" class="input-tag" value="sewing technique">
+                            Sewing technique
+                        </li>
+                        <li>
+                            <input type="checkbox" name="interest" id="finish" class="input-tag" value="finishing"> Finishing
+                            techniques
+                        </li>
+                        <li>
+                            <input type="checkbox" name="interest" id="packaging" class="input-tag" value="packaging"> Product packaging
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <label for="comment" class="label-tag">Do you have any comments or suggestions?</label>
+                    <textarea name="comment" id="comment"
+                        placeholder="Enter your comments or suggestions here"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

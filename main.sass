@@ -1,0 +1,103 @@
+$bg-color: #ede34a
+$fg-color: #ffffff
+$txt-color: #000000
+    
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    color: $txt-color
+
+.container
+    width: 60vw
+    margin: 0 auto
+
+header
+    background-color: $bg-color
+    padding: 1em
+    width: 100%   
+
+#title
+    font-size: 1.5em
+    font-weight: bold
+
+#description
+    font-size: 1.2em
+    font-weight: 400
+
+#title,
+#description
+    text-align: center
+
+form
+    margin: 0.5em 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+
+    label
+        padding-bottom: 0.5em
+        width: 30%
+        padding-right: 0.5em
+        @media screen and (max-width: 600px)
+            width: 100%
+
+    input,
+    select,
+    ul,
+    textarea
+        width: 100%
+        padding: 0.5em
+
+
+fieldset
+    font-size: 1em
+    border-style: solid
+    border-color: $bg-color
+    
+    div
+        display: flex
+        align-items: center
+        padding: 0.5em 0.4em
+        @media screen and (max-width: 600px)
+            flex-flow: wrap
+        ul
+            list-style-type: none
+            display: flex
+            justify-self: flex-start
+            align-content: center
+            flex-direction: column
+            padding: 0
+            li
+                // display: inline-block
+                // padding: 0.2em
+                input
+                    width: 1em
+                    margin-right: 0.5em
+    div:last-child
+        padding-bottom: 1em
+            
+fieldset:nth-child(2)
+    margin-top: 0.5em
+legend
+    font-weight: bold
+    margin-left: 0.5em
+
+textarea
+    height: 5em
+
+button
+    margin: 1em auto 0
+    padding: 0.5em 0
+    width: 40%
+    border-style: solid
+    background-color: $bg-color
+    font-weight: bold
+    transition: all 800ms
+    @media screen and (max-width: 600px)
+        width: 100%
+
+button:hover
+    background-color: $fg-color
+    color: $txt-color
